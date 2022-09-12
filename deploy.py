@@ -10,7 +10,7 @@ app = Flask(__name__) ## defining flask name
 def home():
     return "hello good morning stupid people" #render_template('index.html') ##at home route returning index.html to show
 
-@app.route('/predict',methods=['POST']) ## on post request /predict 
+@app.route('/')#('/predict',methods=['POST']) ## on post request /predict 
 def test_model(test_sentence):
     languages = {
     'Arabic' : 0,
